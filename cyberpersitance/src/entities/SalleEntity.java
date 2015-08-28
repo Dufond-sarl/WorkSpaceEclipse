@@ -24,7 +24,7 @@ public class SalleEntity implements Serializable {
 	//uni-directional many-to-one association to Site
 	@ManyToOne
 	@JoinColumn(name="id_site")
-	private Site site;
+	private SiteEntity siteEntity;
 
 	public SalleEntity() {
 	}
@@ -45,12 +45,12 @@ public class SalleEntity implements Serializable {
 		this.nom = nom;
 	}
 
-	public Site getSite() {
-		return this.site;
+	public SiteEntity getSite() {
+		return this.siteEntity;
 	}
 
-	public void setSite(Site site) {
-		this.site = site;
+	public void setSite(SiteEntity siteEntity) {
+		this.siteEntity = siteEntity;
 	}
 
 }

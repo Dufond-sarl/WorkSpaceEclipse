@@ -10,7 +10,6 @@ import javax.persistence.*;
  * 
  */
 @Entity @Table(name="poste")
-@NamedQuery(name="PosteEntity.findAll", query="SELECT p FROM PosteEntity p")
 // requetes JPQL
 @NamedQueries({
 	@NamedQuery(name="PosteEntity.findAll", query="SELECT p FROM PosteEntity p"),

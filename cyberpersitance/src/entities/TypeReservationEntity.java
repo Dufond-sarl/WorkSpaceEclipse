@@ -10,8 +10,8 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="type_reservation")
-@NamedQuery(name="TypeReservation.findAll", query="SELECT t FROM TypeReservation t")
-public class TypeReservation implements Serializable {
+@NamedQuery(name="TypeReservationEntity.findAll", query="SELECT t FROM TypeReservationEntity t")
+public class TypeReservationEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -21,7 +21,7 @@ public class TypeReservation implements Serializable {
 
 	private String nom;
 
-	public TypeReservation() {
+	public TypeReservationEntity() {
 	}
 
 	public Integer getIdTypeReservation() {

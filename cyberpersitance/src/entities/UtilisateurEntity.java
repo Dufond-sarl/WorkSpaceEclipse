@@ -27,16 +27,11 @@ public class UtilisateurEntity extends PersonneEntity implements Serializable {
 
 	@Column(name="m_d_p")
 	private String mDP;
-/*
-	//uni-directional many-to-one association to Personne
-	@ManyToOne
-	@JoinColumn(name="id_personne")
-	private PersonneEntity personne;
-*/
+
 	//uni-directional many-to-one association to Site
 	@ManyToOne
 	@JoinColumn(name="id_site")
-	private Site site;
+	private SiteEntity siteEntity;
 
 	public UtilisateurEntity() {
 	}
@@ -72,21 +67,13 @@ public class UtilisateurEntity extends PersonneEntity implements Serializable {
 	public void setMDP(String mDP) {
 		this.mDP = mDP;
 	}
-/*
-	public PersonneEntity getPersonne() {
-		return this.personne;
+
+	public SiteEntity getSite() {
+		return this.siteEntity;
 	}
 
-	public void setPersonne(PersonneEntity personne) {
-		this.personne = personne;
-	}
-*/
-	public Site getSite() {
-		return this.site;
-	}
-
-	public void setSite(Site site) {
-		this.site = site;
+	public void setSite(SiteEntity siteEntity) {
+		this.siteEntity = siteEntity;
 	}
 
 }

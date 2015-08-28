@@ -56,7 +56,7 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 	//uni-directional many-to-one association to Site
 	@ManyToOne
 	@JoinColumn(name="id_site")
-	private Site site;
+	private SiteEntity siteEntity;
 
 	//uni-directional many-to-one association to Utilisateur
 	@ManyToOne
@@ -138,12 +138,12 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 		this.quartierPrioritaire = quartierPrioritaire;
 	}
 
-	public Site getSite() {
-		return this.site;
+	public SiteEntity getSite() {
+		return this.siteEntity;
 	}
 
-	public void setSite(Site site) {
-		this.site = site;
+	public void setSite(SiteEntity siteEntity) {
+		this.siteEntity = siteEntity;
 	}
 
 	public UtilisateurEntity getUtilisateur() {

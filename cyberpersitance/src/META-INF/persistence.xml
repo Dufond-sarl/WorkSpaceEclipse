@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="cyberpersist">
+	<persistence-unit name="cyberpersistance">
+		<jta-data-source>java:/jdbc/connectcyber</jta-data-source>
 		<class>entities.AdresseEntity</class>
 		<class>entities.PersonneEntity</class>
 		<class>entities.PosteEntity</class>
 		<class>entities.QuartierPrioritaireEntity</class>
 		<class>entities.ReservationEntity</class>
 		<class>entities.SalleEntity</class>
-		<class>entities.Site</class>
-		<class>entities.TypeReservation</class>
+		<class>entities.SiteEntity</class>
+		<class>entities.TypeReservationEntity</class>
 		<class>entities.UsagerEntity</class>
 		<class>entities.UtilisateurEntity</class>
 	</persistence-unit>

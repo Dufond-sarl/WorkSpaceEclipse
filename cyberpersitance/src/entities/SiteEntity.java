@@ -1,7 +1,9 @@
 package entities;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.sql.Time;
 
 
@@ -9,9 +11,9 @@ import java.sql.Time;
  * The persistent class for the site database table.
  * 
  */
-@Entity
-@NamedQuery(name="Site.findAll", query="SELECT s FROM Site s")
-public class Site implements Serializable {
+@Entity @Table(name="site")
+@NamedQuery(name="SiteEntity.findAll", query="SELECT s FROM SiteEntity s")
+public class SiteEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -32,7 +34,7 @@ public class Site implements Serializable {
 	@JoinColumn(name="id_adresse")
 	private AdresseEntity adresse;
 
-	public Site() {
+	public SiteEntity() {
 	}
 
 	public Integer getIdSite() {
