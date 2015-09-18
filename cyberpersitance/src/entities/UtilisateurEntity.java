@@ -14,11 +14,11 @@ import javax.persistence.*;
 @PrimaryKeyJoinColumn(name="id_personne")
 public class UtilisateurEntity extends PersonneEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
-/*
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_user")
-	private Integer idUser; */
+	private Integer idUser; 
 
 	@Column(name="est_adm")
 	private Boolean estAdm;
@@ -35,7 +35,7 @@ public class UtilisateurEntity extends PersonneEntity implements Serializable {
 
 	public UtilisateurEntity() {
 	}
-/*
+
 	public Integer getIdUser() {
 		return this.idUser;
 	}
@@ -43,7 +43,7 @@ public class UtilisateurEntity extends PersonneEntity implements Serializable {
 	public void setIdUser(Integer idUser) {
 		this.idUser = idUser;
 	}
-*/
+
 	public Boolean getEstAdm() {
 		return this.estAdm;
 	}
