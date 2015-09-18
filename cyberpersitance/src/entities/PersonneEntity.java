@@ -16,11 +16,11 @@ import javax.persistence.*;
 public class PersonneEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-/*	@Id
+	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_personne")
 	private Integer id;
-*/
+
 	private String civilite;
 
 	private String nom;
@@ -29,7 +29,7 @@ public class PersonneEntity implements Serializable {
 
 	public PersonneEntity() {
 	}
-/*
+
 	public Integer getIdPersonne() {
 		return this.id;
 	}
@@ -37,7 +37,7 @@ public class PersonneEntity implements Serializable {
 	public void setIdPersonne(Integer idPersonne) {
 		this.id = idPersonne;
 	}
-*/
+
 	public String getCivilite() {
 		return this.civilite;
 	}

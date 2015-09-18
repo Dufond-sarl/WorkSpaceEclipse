@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 /**
  * The persistent class for the type_reservation database table.
- * 
+ * 		(Table de paramétrage)
  */
 @Entity
 @Table(name="type_reservation")

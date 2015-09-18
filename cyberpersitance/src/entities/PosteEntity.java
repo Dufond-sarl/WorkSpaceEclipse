@@ -37,7 +37,7 @@ public class PosteEntity implements Serializable {
 	//uni-directional many-to-one association to Salle
 	@ManyToOne
 	@JoinColumn(name="id_salle", nullable=false)
-	private SalleEntity salle;
+	private SalleEntity salleEntity;
 
 	public PosteEntity() {
 	}
@@ -74,12 +74,12 @@ public class PosteEntity implements Serializable {
 		this.nom = nom;
 	}
 
-	public SalleEntity getSalle() {
-		return this.salle;
+	public SalleEntity getSalleEntity() {
+		return this.salleEntity ;
 	}
 
-	public void setSalle(SalleEntity salle) {
-		this.salle = salle;
+	public void setSalleEntity (SalleEntity salleEntity) {
+		this.salleEntity = salleEntity;
 	}
 
 }

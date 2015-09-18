@@ -42,12 +42,7 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="id_adresse")
 	private AdresseEntity adresse;
-/*
-	//uni-directional many-to-one association to Personne
-	@ManyToOne
-	@JoinColumn(name="id_personne")
-	private PersonneEntity personne;
-*/
+
 	//uni-directional many-to-one association to QuartierPrioritaire
 	@ManyToOne
 	@JoinColumn(name="id_quartier")
@@ -121,15 +116,7 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 	public void setAdresse(AdresseEntity adresse) {
 		this.adresse = adresse;
 	}
-/*
-	public PersonneEntity getPersonne() {
-		return this.personne;
-	}
 
-	public void setPersonne(PersonneEntity personne) {
-		this.personne = personne;
-	}
-*/
 	public QuartierPrioritaireEntity getQuartierPrioritaire() {
 		return this.quartierPrioritaire;
 	}

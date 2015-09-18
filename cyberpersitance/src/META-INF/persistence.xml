@@ -12,5 +12,7 @@
 		<class>entities.TypeReservationEntity</class>
 		<class>entities.UsagerEntity</class>
 		<class>entities.UtilisateurEntity</class>
+		<class>entities.ConnexionLdapEntity</class>
+		<class>entities.QuartierPrioritaire</class>
 	</persistence-unit>
 </persistence>

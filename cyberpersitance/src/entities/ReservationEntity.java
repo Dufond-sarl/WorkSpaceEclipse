@@ -44,7 +44,7 @@ public class ReservationEntity implements Serializable {
 	//uni-directional many-to-one association to Usager
 	@ManyToOne
 	@JoinColumn(name="id_usager")
-	private UsagerEntity usager;
+	private UsagerEntity usagerEntity;
 
 	//uni-directional many-to-one association to Utilisateur
 	@ManyToOne
@@ -102,12 +102,12 @@ public class ReservationEntity implements Serializable {
 		this.typeReservationEntity = typeReservationEntity;
 	}
 
-	public UsagerEntity getUsager() {
-		return this.usager;
+	public UsagerEntity getUsagerEntity() {
+		return this.usagerEntity;
 	}
 
-	public void setUsager(UsagerEntity usager) {
-		this.usager = usager;
+	public void setUsagerEntity(UsagerEntity usagerEntity) {
+		this.usagerEntity = usagerEntity;
 	}
 
 	public UtilisateurEntity getUtilisateur() {
