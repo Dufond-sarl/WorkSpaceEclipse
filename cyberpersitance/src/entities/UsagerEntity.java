@@ -16,12 +16,12 @@ import java.util.Date;
 @PrimaryKeyJoinColumn(name="id_personne")
 public class UsagerEntity extends PersonneEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
-
+/*
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_usager")
 	private Integer idUsager;
-
+*/
 	@Column(name="accompagne_mission_locale")
 	private Boolean accompagneMissionLocale;
 
@@ -51,7 +51,7 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 	//uni-directional many-to-one association to Site
 	@ManyToOne
 	@JoinColumn(name="id_site")
-	private SiteEntity siteEntity;
+	private SiteEntity site;
 
 	//uni-directional many-to-one association to Utilisateur
 	@ManyToOne
@@ -61,14 +61,14 @@ public class UsagerEntity extends PersonneEntity implements Serializable {
 	public UsagerEntity() {
 	}
 
-	public Integer getIdUsager() {
+/*	public Integer getIdUsager() {
 		return this.idUsager;
 	}
 
 	public void setIdUsager(Integer idUsager) {
 		this.idUsager = idUsager;
 	}
-
+*/
 	public Boolean getAccompagneMissionLocale() {
 		return this.accompagneMissionLocale;
 	}

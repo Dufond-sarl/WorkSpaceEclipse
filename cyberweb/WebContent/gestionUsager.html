@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CyberBase</title>
+	<style type="text/css" media="screen, print">
+        @font-face {
+          font-family: "Bebas";
+          src: url("Police/BEBAS___.TTF");
+        }
+    </style>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+<link href="jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="cyberBaseUsager.js"></script>
+</head>
+
+    <body>
+    	<div class="Container">
+            <header>
+            	<a href="index.html"><img class="Logo" src="img/cyberbaselogo.png"/></a>
+        
+			<div class="Menu">
+                
+                <ul>
+                	<li style="color: #484444">
+                    	<a href="gestionUtilisateur.html">GESTION DES UTILISATEUR</a>
+                    </li>
+                	<li>
+                    	<a href="gestionParc.html">GESTION DU PARC</a>
+                    </li>
+                	<li>
+                    	<a href="gestionUsager.html">GESTION DES USAGERS</a>
+                    </li>
+                	<li>
+                    	<a href="gestionPlanning.html">GESTION DES PLANNINGS</a>
+                    </li>
+                	<li>
+                    	<a href="gestionStat.html">STATISTIQUES</a>
+                    </li>
+                </ul>
+                
+             </div>
+            </header>
+                 
+            <div id="create-user" class="Control">
+                <div class="add"><img src="img/AddUser.png" width="40px"></div><div class="addtext">Ajouter   un   usager</div>
+                
+            </div>   
+
+ <button id="clear">effacer donnees</button>
+                 
+             <div id="Tableau"  class="Tableau">
+             
+             
+                 <div class="ligne">
+                     <div class="TabU0">Nom</div>
+                     <div class="TabU0">Prenom</div>
+                     <div class="TabU0">Date</div>
+                     <div class="TabU0">Niveau  form</div>
+                     <div class="TabU0">CSP</div>
+                     <div class="TabU01">M.L.</div>
+                     <div class="TabU01">Exclu</div>
+                     <div class="TabU02">Adresse</div>
+                     <div class="TabU0">Site par default</div>
+                     <div class="TabU0">Quartier</div>
+                 </div>
+              </div>
+              
+              
+              
+              
+        </div>
+
+	<div id="dialog-form" title="Ajouter un utilisateur">
+      <p class="validateTips">Veuillez remplir tous les champs : </p>
+
+      <form>
+        <fieldset class="formUtil">
+         <div>
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" value="Jane" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="prenom">Prenom</label>
+          <input type="text" name="prenom" id="prenom" value="Smith" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">Date de naissance</label>
+          <input type="text" name="date" id="date" value="xx/xx/xxx" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">Niveau de formation</label>
+          <input type="text" name="niveau" id="niveau" value="bac+2" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">CSP</label>
+          <input type="text" name="csp" id="csp" value="xx: xxxxx" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">Suivi mission locale</label>
+          <input type="text" name="ml" id="ml" value="non" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">Exclu</label>
+          <input type="text" name="exclu" id="exclu" value="non" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="name">Adresse</label>
+          <input type="text" name="adresse" id="adresse" value="xx xxxxxxxxx xx xxxxx" class="text ui-widget-content ui-corner-all">
+         </div>
+         <div>
+          <label for="site">Site d appartenance</label>
+          <select name="selsite" id="selsite" class="text ui-widget-content ui-corner-all"><!-- Le choix est alimenter par javascript--></select>
+         </div>
+         <div>
+          <label for="admin">Quartier</label>
+          <select name="quartier" id="quartier" class="text ui-widget-content ui-corner-all"><!-- Le choix est alimenter par javascript--></select>
+         </div>
+          <!-- Allow form submission with keyboard without duplicating the dialog button -->
+          <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+      </form>
+    </div>
+	</body>
+</html>

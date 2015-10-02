@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: Bebas;
+  src: local("Police/BEBAS___.TTF"),
+  local("Police/BEBAS___.TTF"),
+  url(Police/BEBAS___.TTF);
+  font-weight: bold;
+}
+html{
+     margin: 0px;
+    padding: 0px;
+}
+
+body {	width:100%;
+		height:860px;
+		margin:auto;
+		padding: 0px;
+		text-align:center;
+
+}
+
+.Container {
+	width: 1024px;
+	height: 100%;	
+	margin: auto;
+	text-align:center;
+}
+
+header  {
+	display:block;
+	float:left;
+	width:100%;
+	height:150px;
+	background-image: url(img/FondHeader.png);
+	background-repeat:repeat-x;		
+}
+header .Logo	{
+	display:block;
+	float:left;
+	width: 200px;
+	padding: 2% 0 0 2%;		
+}
+.Menu	{
+	display:block;
+	float:left;
+	width:100%;
+	padding: 10px 0 0 0;
+	margin: auto 0px 0px 0px;	
+}
+.Menu ul	{
+	display:block;
+	float:left;
+	font-size:14px;
+	font-family:Bebas, Arial, Helvetica, sans-serif;
+}
+.Menu ul li	{
+	display:block;
+	float:left;	
+	padding: 0px 15px 0px 15px;
+	color: #484444;
+	border-left: 2px solid black;
+}
+.Menu ul li:hover	{
+	color: #eb7700;
+}
+.Menu ul li a {
+	text-decoration:none;
+
+}
+
+.Menu ul li a:visited	{
+	color: #484444;
+}
+
+
+/*CSS du corps de la page d accueil*/
+.Corps {
+	display:block;
+	float:left;
+	width:100%;
+	/*height: 400px;*/
+	padding-top: 10%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;	
+}
+
+
+.Corps .TextHome {
+	display:block;
+	float:left;
+	width:44%;
+	height: 100%;
+	padding: 3% 3% 3% 3%;
+	text-align: left;
+}
+.Corps .TextHome p {
+	display:block;
+	float:left;
+	width: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;	
+	padding-right: 10%;
+
+}
+.Corps .TextHome h1 {
+	margin-bottom: 40px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+
+.Corps .ImgHome {
+	display:block;
+	float:left;
+	width:44%;
+	padding: 3% 3% 3% 3%;
+}
+.Control{
+    display: inline-block;
+    float: left;
+    
+    
+}
+
+.Control .add{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0px 20px 30px;
+    
+}
+
+.Control .addtext{
+    display: inline;
+    position: absolute;
+	font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: -20px;
+    
+    
+}
+
+
+.Tableau{
+    display:block;
+	float:left;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;	  
+    
+    
+}
+.ligne{
+	width:100%; 
+	height:30px;
+    margin: 0px auto 0px 5%;
+    text-align: center;
+    font-size: 1.7em;
+    vertical-align: middle;
+    line-height: 30px;	
+}
+
+
+.ligne:nth-child(even) * {
+    background-color:#D2E8FD;
+}
+
+.Tab0 {
+	display:block;
+	float:left;
+	width:15%; 
+	height:30px;
+	background-color:#CCC;
+	text-align:left;
+	font-size:12px;
+	font-family:Bebas;
+	border:1px solid  #000;
+	
+}
+.Tab {
+	display:block;
+	float:left;
+	width:15%; 
+	height:30px;
+	border:1px solid #000;
+	
+}
+.TabU0 {
+	display:block;
+	float:left;
+	width:9%; 
+	height:30px;
+	background-color:#CCC;
+	text-align:left;
+	font-size:12px;
+	font-family:Bebas;
+	border:1px solid  #000;
+	
+}
+.TabU01 {
+	display:block;
+	float:left;
+	width:3%; 
+	height:30px;
+	background-color:#CCC;
+	text-align:left;
+	font-size:12px;
+	font-family:Bebas;
+	border:1px solid  #000;
+	
+}
+.TabU02 {
+	display:block;
+	float:left;
+	width:21%; 
+	height:30px;
+	background-color:#CCC;
+	text-align:left;
+	font-size:12px;
+	font-family:Bebas;
+	border:1px solid  #000;
+	
+}
+.TabU {
+	display:block;
+	float:left;
+	width:9%; 
+	height:30px;
+	border:1px solid #000;
+	
+}
+.TabU1 {
+	display:block;
+	float:left;
+	width:3%; 
+	height:30px;
+	border:1px solid #000;
+	
+}
+.TabU2 {
+	display:block;
+	float:left;
+	width:21%; 
+	height:30px;
+	border:1px solid #000;
+	
+}
+
+
+/*
+label{
+    text-align: right;
+    float: left;
+    display: inline-block;
+    width: 47%;
+    margin: 2px 0px 2px 0px;
+}
+input{
+    float: right;   
+    
+}
+*/
+
+.select_salle{
+    display: block;
+    background-color: #eee;
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

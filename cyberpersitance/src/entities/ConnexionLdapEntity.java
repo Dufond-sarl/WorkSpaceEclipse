@@ -17,9 +17,9 @@ import java.util.Date;
 @NamedQueries({
 	@NamedQuery(name="ConnexionLdapEntity.findAll", query="SELECT c FROM ConnexionLdapEntity c"),
 	@NamedQuery(name="ConnexionLdapEntity.findByPoste",
-            query="SELECT c FROM ConnexionLdapEntity c WHERE c.poste = :poste" ),               
+            query="SELECT c FROM ConnexionLdapEntity c WHERE c.posteEntity = :posteEntity" ),               
     @NamedQuery(name="ConnexionLdapEntity.findByUsager",
-            query="SELECT c FROM ConnexionLdapEntity c WHERE c.usager = :usager" ),               
+            query="SELECT c FROM ConnexionLdapEntity c WHERE c.usagerEntity = :usagerEntity" ),               
 })
 public class ConnexionLdapEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

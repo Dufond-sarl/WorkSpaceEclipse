@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NamedQueries({
 	@NamedQuery(name="PosteEntity.findAll", query="SELECT p FROM PosteEntity p"),
 	@NamedQuery(name="PosteEntity.findBySalle",
-            query="SELECT p FROM PosteEntity p WHERE p.salle = :salle" ),               
+            query="SELECT p FROM PosteEntity p WHERE p.salleEntity = :salleEntity" ),               
 }) 
 
 
